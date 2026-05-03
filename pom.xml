@@ -28,8 +28,24 @@
   </dependencyManagement>
 
 
-
   <dependencies>
+
+    <!-- Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>6.0.3</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>6.0.3</version>
+      <scope>test</scope>
+    </dependency>
+
     <!--Selenium Dependency-->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>

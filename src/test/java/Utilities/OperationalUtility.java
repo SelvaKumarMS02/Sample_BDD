@@ -220,6 +220,10 @@ public class OperationalUtility {
         return intRowNum;
     }
 
+    public static String getData(String strColumnName){
+        return(lstTestData.get(intRowNum).get(strColumnName));
+    }
+
 
     public static void takeScreenshot(String strInfo, String strMessage, String strScreenshotInfo){
         Allure.addAttachment(strInfo, strMessage);

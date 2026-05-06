@@ -26,9 +26,13 @@ public class ApplicationUtility {
 
         //Setting up Webdriver
         WebDriverManager.chromedriver().setup();
+        //System.setProperty("webdriver.chrome.driver",
+               // OperationalUtility.strChromedriverLocation);
         driver = new ChromeDriver(options);
+
         driver.manage().window().maximize();
         driver.get(OperationalUtility.getProperty("URL"));
+
 
     }
 

@@ -12,9 +12,10 @@ public class SampleStepDef {
     //initializing page class
     GooglePage objGooglePage = new GooglePage();
 
-    @Given("the user able to navigate to Google and provide data for {String},{String}")
-    public void the_user_able_to_navigate_to_Google(String strTestCase, String strDataSheet) throws DataFormatException, IOException {
-        OperationalUtility.getRowNum(strDataSheet,strTestCase);
+    @Given("the user able to navigate to Google and provide data for {string},{string}")
+    public void the_user_able_to_navigate_to_Google_and_provide_data_for (String strTestCase, String strDataSheet) throws DataFormatException, IOException {
+        OperationalUtility.getRowNum(strTestCase,strDataSheet);
         objGooglePage.searchGoogle();
     }
 }
+

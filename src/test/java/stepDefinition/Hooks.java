@@ -1,12 +1,12 @@
 package stepDefinition;
 
 import Utilities.ApplicationUtility;
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class Hooks {
     @Before
-    public void setUp{
+    public void setUp(){
         ApplicationUtility.intiDriver();
     }
 
